@@ -19,7 +19,10 @@ EMOJI_MAPPING = {
     'eye-roll': '🙄',
     'sweat': '😅',
     'angry': '😡',
-    'grin': '😁'
+    'grin': '😁',
+    'neutral': '😐',
+    'nerd': '🤓',
+    'monkey': '🐒'
 }
 
 print(os.getcwd())
@@ -83,7 +86,7 @@ def main():
 
     while emotion_to_record not in EMOJI_MAPPING:
         emotion_to_record = input(
-            "Enter the name of recorded emotion (cool, thinking, affectionate, rofl, pleasant, surprise, eye-roll, sweat, crying, angry, grin): ")
+            "Enter the name of recorded emotion (cool, thinking, affectionate, rofl, pleasant, surprise, eye-roll, sweat, crying, angry, grin, neutral, nerd, monkey): ")
 
     try:
         start_line = int(input("Enter the line number to start from (1-based index): ")) - 1
