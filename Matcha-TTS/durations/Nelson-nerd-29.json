@@ -1,0 +1,240 @@
+[
+    {
+        "ʃ": {
+            "starttime": 0,
+            "endtime": 11,
+            "duration": 11
+        }
+    },
+    {
+        "i": {
+            "starttime": 11,
+            "endtime": 13,
+            "duration": 2
+        }
+    },
+    {
+        "ː": {
+            "starttime": 13,
+            "endtime": 15,
+            "duration": 2
+        }
+    },
+    {
+        "z": {
+            "starttime": 15,
+            "endtime": 65,
+            "duration": 50
+        }
+    },
+    {
+        " ": {
+            "starttime": 65,
+            "endtime": 67,
+            "duration": 2
+        }
+    },
+    {
+        "n": {
+            "starttime": 67,
+            "endtime": 69,
+            "duration": 2
+        }
+    },
+    {
+        "ˌ": {
+            "starttime": 69,
+            "endtime": 71,
+            "duration": 2
+        }
+    },
+    {
+        "ɑ": {
+            "starttime": 71,
+            "endtime": 73,
+            "duration": 2
+        }
+    },
+    {
+        "ː": {
+            "starttime": 73,
+            "endtime": 88,
+            "duration": 15
+        }
+    },
+    {
+        "t": {
+            "starttime": 88,
+            "endtime": 103,
+            "duration": 15
+        }
+    },
+    {
+        " ": {
+            "starttime": 103,
+            "endtime": 112,
+            "duration": 9
+        }
+    },
+    {
+        "k": {
+            "starttime": 112,
+            "endtime": 121,
+            "duration": 9
+        }
+    },
+    {
+        "ɹ": {
+            "starttime": 121,
+            "endtime": 123,
+            "duration": 2
+        }
+    },
+    {
+        "ˈ": {
+            "starttime": 123,
+            "endtime": 125,
+            "duration": 2
+        }
+    },
+    {
+        "a": {
+            "starttime": 125,
+            "endtime": 127,
+            "duration": 2
+        }
+    },
+    {
+        "ɪ": {
+            "starttime": 127,
+            "endtime": 129,
+            "duration": 2
+        }
+    },
+    {
+        "ɪ": {
+            "starttime": 129,
+            "endtime": 144,
+            "duration": 15
+        }
+    },
+    {
+        "ŋ": {
+            "starttime": 144,
+            "endtime": 159,
+            "duration": 15
+        }
+    },
+    {
+        ".": {
+            "starttime": 159,
+            "endtime": 161,
+            "duration": 2
+        }
+    },
+    {
+        " ": {
+            "starttime": 161,
+            "endtime": 163,
+            "duration": 2
+        }
+    },
+    {
+        "ʃ": {
+            "starttime": 163,
+            "endtime": 165,
+            "duration": 2
+        }
+    },
+    {
+        "i": {
+            "starttime": 165,
+            "endtime": 198,
+            "duration": 33
+        }
+    },
+    {
+        "ː": {
+            "starttime": 198,
+            "endtime": 200,
+            "duration": 2
+        }
+    },
+    {
+        "z": {
+            "starttime": 200,
+            "endtime": 213,
+            "duration": 13
+        }
+    },
+    {
+        " ": {
+            "starttime": 213,
+            "endtime": 226,
+            "duration": 13
+        }
+    },
+    {
+        "f": {
+            "starttime": 226,
+            "endtime": 228,
+            "duration": 2
+        }
+    },
+    {
+        "ˈ": {
+            "starttime": 228,
+            "endtime": 230,
+            "duration": 2
+        }
+    },
+    {
+        "ɑ": {
+            "starttime": 230,
+            "endtime": 247,
+            "duration": 17
+        }
+    },
+    {
+        "ː": {
+            "starttime": 247,
+            "endtime": 264,
+            "duration": 17
+        }
+    },
+    {
+        "ɹ": {
+            "starttime": 264,
+            "endtime": 266,
+            "duration": 2
+        }
+    },
+    {
+        "ɾ": {
+            "starttime": 266,
+            "endtime": 268,
+            "duration": 2
+        }
+    },
+    {
+        "ɪ": {
+            "starttime": 268,
+            "endtime": 270,
+            "duration": 2
+        }
+    },
+    {
+        "ŋ": {
+            "starttime": 270,
+            "endtime": 272,
+            "duration": 2
+        }
+    },
+    {
+        ".": {
+            "starttime": 272,
+            "endtime": 337,
+            "duration": 65
+        }
+    }
+]

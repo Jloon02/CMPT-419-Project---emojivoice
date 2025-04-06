@@ -36,7 +36,7 @@ SRT_PATH = "output.srt"
 ASR_MODEL = "tiny.en"
 
 ############################### LLM PARAMETERS #########################################################################
-LLM_MODEL = "llama3.2:1b"
+LLM_MODEL = "llama3"
 PROMPT = """
             You are a robot designed to help humans
 
@@ -73,7 +73,7 @@ if VOICE == 'base' :
     SPEAKING_RATE = 0.8
     STEPS = 10
 else:
-    TTS_MODEL_PATH = "./Matcha-TTS/emoji-hri-paige.ckpt"
+    TTS_MODEL_PATH = "./Matcha-TTS/emoji-hri-paige.ckpt"# "./Matcha-TTS/last.ckpt" # "./Matcha-TTS/emoji-hri-paige.ckpt"
     SPEAKING_RATE = 0.8
     STEPS = 10
 # hifigan_univ_v1 is suggested, unless the custom model is trained on LJ Speech
@@ -96,7 +96,8 @@ emoji_mapping = {
     '🤣' : 15,
     '😮' : 54,
     '😅' : 22,
-    '🤔' : 17
+    '🤔' : 17,
+    '🤓' : 0
 }
 
 #male voice mapping
