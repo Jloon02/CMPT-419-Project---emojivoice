@@ -88,7 +88,7 @@ It is possible to customize the pipeline. You can perform the following modifica
 
 All of these changes can be found at the top of the [feel_me.py](feel_me.py)
 
-Currently the system contains 11 emoji voices: 😎🤔😍🤣🙂😮🙄😅🥲😭😡😁
+Currently the system contains 11 emoji voices: 😎🤔😍🤣🙂😮🙄😅😭😡😁
 If you wish to change the personality of the chatbot or the emojis used by the chatbot edit the `PROMPT` parameter
 
 If you wish to use a different voice or add new emojis you can quickly and easily fine tune Matcha-TTS to create
@@ -102,6 +102,7 @@ for links) or from our provided checkpoints.
 
 You can use our script [record_audio.py](/Matcha-TTS/record_audio.py) to easily record your data and
 [get_duration.ipynb](/Matcha-TTS/get_duration.ipynb) to check the duration of all of your recordings.
+If fine tuning from a checkpoint the sampling rate for the audio files must be 22050.
 
 To record audio create a `<emoji_name>.txt` where each line is a script to read, then set the emoji and emoji name (file name), with the `EMOJI_MAPPING` parameter in `record_audio.py`
 
@@ -116,7 +117,10 @@ and transcription set up in `emojis-hri-clean.zip`
 Hints: for fine tuning
 
 First create your own experiment and data configs following the [examples](https://github.com/rosielab/emojivoice/tree/main/Matcha-TTS/configs) mapping to your trascription
-file location.
+file location. The two primary configs to create (and check out the paths to the data) are one in [data](https://github.com/rosielab/emojivoice/blob/main/Matcha-TTS/configs/data/emoji_multi.yaml) and
+one in [experiments](https://github.com/rosielab/emojivoice/blob/main/Matcha-TTS/configs/experiment/emoji_multi.yaml). The paths here should point to where your train and validation files are stored,
+and your train and validation files should point to your audio file locations. You can test that all these files are pointing the right way before training when you run: `matcha-data-stats -i ljspeech.yaml`
+as per the matcha repo training steps.
 
 Then follow the orginal Matcha-TTS instructions
 
@@ -124,9 +128,15 @@ To train from a checkpoint run:
 ```bash
 python matcha/train.py experiment=<YOUR EXPERIMENT> ckpt_path=<PATH TO CHECKPOINT>
 ```
+
+You can train off of the matcha base release checkpoints or the emojivoice checkpoints.
+
 To run multi-speaker synthesis:
 
 ```bash
 matcha-tts --text "<INPUT TEXT>" --checkpoint_path <PATH TO CHECKPOINT> --spk <SPEAKER NUMBER> --vocoder hifigan_univ_v1 --speaking_rate <SPEECH RATE>
 ```
+
+If you are having issues, sometimes cuda will make the error messages convoluted, run training in [cpu](https://github.com/shivammehta25/Matcha-TTS/blob/main/configs/trainer/default.yaml)(set accelerator to cpu and remove devices)
+mode to get more clear error outputs.
 
